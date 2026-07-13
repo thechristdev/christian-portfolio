@@ -1,7 +1,7 @@
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faJava, faPython, faMicrosoft } from '@fortawesome/free-brands-svg-icons';
+import { faJs, faPython, faMicrosoft } from '@fortawesome/free-brands-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
@@ -12,7 +12,7 @@ const labelsFirst = [
 ];
 
 const labelsSecond = [
-    "Java",
+    "JavaScrqipt",
     "AI-Assisted Development",
 ];
 
@@ -25,7 +25,7 @@ const labelsThird = [
 
 function Expertise() {
     return (
-    <div className="container" id="expertise">
+    <div className="container" id="skills">
         <div className="skills-container">
             <h1>Skills</h1>
             <div className="skills-grid">
@@ -34,7 +34,7 @@ function Expertise() {
                     <h3>Python with AI Assisted Development</h3>
                     <p>Experienced in using Python together with AI-assisted development (vibe coding) to rapidly prototype, build, debug, and optimize applications while maintaining code quality and functionality.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                        <span className="chip-title">Key skills:</span>
                         {labelsFirst.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
@@ -42,11 +42,11 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faJava} size="3x"/>
-                    <h3>Java with AI Assisted Development</h3>
-                    <p>Experienced in using Java together with AI-assisted development (vibe coding) to rapidly prototype, build, debug, and optimize applications while maintaining code quality and functionality.</p>
+                    <FontAwesomeIcon icon={faJs} size="3x"/>
+                    <h3>JavaScript with AI Assisted Development</h3>
+                    <p>Experienced in using JavaScript together with AI-assisted development (vibe coding) to rapidly prototype, build, debug, and optimize applications while maintaining code quality and functionality.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                        <span className="chip-title">Key skills:</span>
                         {labelsSecond.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
