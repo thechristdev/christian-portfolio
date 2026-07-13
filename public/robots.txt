@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://thechristdev.github.io/christian-portfolio/sitemap.xml
